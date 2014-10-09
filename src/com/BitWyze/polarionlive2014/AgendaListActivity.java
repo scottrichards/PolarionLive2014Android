@@ -27,7 +27,6 @@ public class AgendaListActivity extends ListActivity {
 		agendaQueryAdapter.setTextKey("session");
 		// Default view is all meals
 		setListAdapter(agendaQueryAdapter);
-	//	setContentView(R.layout.agenda_list_session);
 	}
 	
 	@Override

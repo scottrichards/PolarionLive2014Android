@@ -20,7 +20,6 @@ public class MainActivity extends ActionBarActivity {
     	ParseObject.registerSubclass(Agenda.class);
     	Parse.initialize(this, "eo7wLLlQekmYfJJ77gmXhQkTfFC3qK0OvKV8pFYK", "r7dROaatklYbtxk9sG8NhXjGJ63M00KnEEWbBaOx");
         super.onCreate(savedInstanceState);
- //       agendaQueryAdapter = new AgendaQueryAdapter(this);
         setContentView(R.layout.activity_main);
     }
 
@@ -45,6 +44,10 @@ public class MainActivity extends ActionBarActivity {
 			}
 			case R.id.action_partners: {
 				startActivity(new Intent(this, PartnerActivity.class));
+				break;
+			}
+			case R.id.action_raffle: {
+				startActivity(new Intent(this, RaffleActivity.class));
 				break;
 			}
 	

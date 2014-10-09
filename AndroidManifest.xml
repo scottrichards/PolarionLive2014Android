@@ -35,6 +35,11 @@
             android:name=".AgendaListActivity"
             android:label="@string/agenda" >
         </activity>
+        
+          <activity
+            android:name=".RaffleActivity"
+            android:label="@string/raffle" >
+        </activity>
     </application>
 
 </manifest>
