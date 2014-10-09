@@ -56,7 +56,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:text="Next" />
+        android:layout_marginTop="23dp"
+        android:text="Next" 
+        />
 
 </RelativeLayout>
