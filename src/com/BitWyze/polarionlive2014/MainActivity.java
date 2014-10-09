@@ -9,6 +9,7 @@ import android.view.MenuItem;
 
 import com.parse.Parse;
 import com.parse.ParseAnalytics;
+import com.parse.ParseObject;
 import com.BitWyze.polarionlive2014.AgendaQueryAdapter;
 
 public class MainActivity extends ActionBarActivity {
@@ -16,6 +17,7 @@ public class MainActivity extends ActionBarActivity {
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    	ParseObject.registerSubclass(Agenda.class);
     	Parse.initialize(this, "eo7wLLlQekmYfJJ77gmXhQkTfFC3qK0OvKV8pFYK", "r7dROaatklYbtxk9sG8NhXjGJ63M00KnEEWbBaOx");
         super.onCreate(savedInstanceState);
  //       agendaQueryAdapter = new AgendaQueryAdapter(this);
@@ -38,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
         switch (item.getItemId()) {
 
 			case R.id.action_agenda: {
-//				updateAgendaList();
+				startActivity(new Intent(this, AgendaListActivity.class));
 				break;
 			}
 			case R.id.action_partners: {
@@ -51,8 +53,4 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
     
-//    private void updateAgendaList() {
-//		agendaQueryAdapter.loadObjects();
-//		setListAdapter(agendaQueryAdapter);
-//	}
 }

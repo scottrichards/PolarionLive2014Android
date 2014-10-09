@@ -30,6 +30,11 @@
             android:name=".PartnerActivity"
             android:label="@string/partners" >
         </activity>
+        
+         <activity
+            android:name=".AgendaListActivity"
+            android:label="@string/agenda" >
+        </activity>
     </application>
 
 </manifest>
