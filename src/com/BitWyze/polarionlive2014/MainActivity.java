@@ -2,6 +2,7 @@ package com.BitWyze.polarionlive2014;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -38,6 +39,10 @@ public class MainActivity extends ActionBarActivity {
 
 			case R.id.action_agenda: {
 //				updateAgendaList();
+				break;
+			}
+			case R.id.action_partners: {
+				startActivity(new Intent(this, PartnerActivity.class));
 				break;
 			}
 	
