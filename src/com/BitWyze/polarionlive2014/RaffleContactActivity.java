@@ -6,11 +6,16 @@ import android.view.Menu;
 import android.widget.Button;
 
 public class RaffleContactActivity extends Activity {
-
+	private String testimonial;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.raffle_contact_view);
+		Bundle extras = getIntent().getExtras();
+		if (extras != null) {
+			testimonial = extras.getString("TESTIMONIAL_TEXT");
+		}
 	}
 	
 	 @Override

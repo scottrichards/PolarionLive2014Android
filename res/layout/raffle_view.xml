@@ -32,20 +32,19 @@
         android:text="Share what&apos;s Great about Polarion:" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/testimonial_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/textView3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="23dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:lines="4"
-       	android:layout_alignParentLeft = "true"
-       	android:layout_alignParentRight = "true" 
-       	android:layout_marginLeft="20dp"
-       	android:layout_marginRight="20dp"
-       	>
+        android:lines="4" >
 
         <requestFocus />
     </EditText>
@@ -54,7 +53,7 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/testimonial_text"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
         android:text="Next" 
