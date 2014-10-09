@@ -28,7 +28,9 @@
         
          <activity
             android:name=".PartnerActivity"
-            android:label="@string/partners" >
+            android:label="@string/partners"
+            android:theme="@style/MyActionBar"
+             >
         </activity>
         
          <activity
