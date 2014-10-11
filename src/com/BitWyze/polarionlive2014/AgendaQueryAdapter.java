@@ -51,20 +51,20 @@ public class AgendaQueryAdapter extends ParseQueryAdapter<Agenda> {
 		locationView.setText(agendaItem.getLocation());
 		TextView timeView = (TextView) v
 				.findViewById(R.id.time);
-		timeView.setText(getSessionTime(agendaItem));
+		timeView.setText(agendaItem.getTime());
 		return v;
 	}
 	
-	public String getSessionTime(Agenda session) {
-		Date start = session.getDate("start");
-		Date end = session.getDate("end");
-		SimpleDateFormat df = new SimpleDateFormat("hh:mm");
-		String startTime = "", endTime = "";
-		if (start != null)
-			startTime = df.format(start);
-		if (end != null)
-			endTime = df.format(end);
-		String time = startTime + " - " + endTime;
-		return time;
-	}
+//	public String getSessionTime(Agenda session) {
+//		Date start = session.getDate("start");
+//		Date end = session.getDate("end");
+//		SimpleDateFormat df = new SimpleDateFormat("hh:mm");
+//		String startTime = "", endTime = "";
+//		if (start != null)
+//			startTime = df.format(start);
+//		if (end != null)
+//			endTime = df.format(end);
+//		String time = startTime + " - " + endTime;
+//		return time;
+//	}
 }

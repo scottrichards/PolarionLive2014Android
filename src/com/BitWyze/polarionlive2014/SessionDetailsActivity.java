@@ -33,5 +33,7 @@ public class SessionDetailsActivity extends Activity {
 		sessionNameView.setText(sessionItem.getSession());
 		sessionDescriptionView.setText(sessionItem.getDescription());
 		sessionSpeakersView.setText(sessionItem.getSpeakers());
+		sessionTimeView.setText(sessionItem.getTime());
+		sessionLocationView.setText(sessionItem.getLocation());
 	}
 }

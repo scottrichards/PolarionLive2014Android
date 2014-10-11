@@ -1,5 +1,8 @@
 package com.BitWyze.polarionlive2014;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import com.parse.ParseObject;
 import com.parse.ParseClassName;
 import com.parse.ParseFile;
@@ -7,7 +10,8 @@ import com.parse.ParseUser;
 
 @ParseClassName("Agenda")
 public class Agenda extends ParseObject {
-
+	static SimpleDateFormat dateFormat;
+	
 	public Agenda() {
 		// A default constructor is required.
 	}
@@ -50,5 +54,21 @@ public class Agenda extends ParseObject {
 	
 	public String getSpeakers() {
 		return getString("presenter");
+	}
+	
+	public String getTime() {
+		if (dateFormat == null) {
+			dateFormat = new SimpleDateFormat("hh:mm",java.util.Locale.getDefault());
+		}
+		String timeStr = "";
+		Date start = getDate("start");
+		Date end = getDate("end");
+		if (start != null) {
+			timeStr = dateFormat.format(start);
+		}
+		if (end != null) {
+			timeStr += " - " + dateFormat.format(end);
+		}
+		return timeStr;
 	}
 }
