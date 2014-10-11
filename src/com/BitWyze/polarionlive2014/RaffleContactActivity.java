@@ -53,6 +53,8 @@ public class RaffleContactActivity extends Activity {
 				startActivity(mainActivityIntent);
 			}
 		});
+		
+		
 	}
 	
 	 @Override

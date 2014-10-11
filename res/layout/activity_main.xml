@@ -37,6 +37,7 @@
         android:layout_alignLeft="@+id/imageView1"
         android:layout_alignTop="@+id/imageView1"
         android:layout_marginLeft="70dp"
+        android:fontFamily="Helvetica"
         android:text="Polarion Live"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 

@@ -43,4 +43,12 @@ public class Agenda extends ParseObject {
 	public void setEnd(int location) {
 		put("end", location);
 	}
+	
+	public String getDescription() {
+		return getString("description");
+	}
+	
+	public String getSpeakers() {
+		return getString("presenter");
+	}
 }

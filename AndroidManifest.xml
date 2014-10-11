@@ -12,10 +12,14 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".PolarionApplication"        
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+         >
+        
+        
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -38,6 +42,11 @@
             android:label="@string/agenda" >
         </activity>
         
+        <activity
+            android:name=".SessionDetailsActivity"
+            android:label="Details"
+             >
+        </activity>
         <activity
             android:name=".RaffleActivity"
             android:label="@string/raffle" >
