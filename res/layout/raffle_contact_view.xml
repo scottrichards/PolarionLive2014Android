@@ -7,8 +7,8 @@
         android:id="@+id/name_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/topicDescription"
+        android:layout_below="@+id/topicDescription"
         android:ems="10" >
 
         <requestFocus />
@@ -83,7 +83,7 @@
         android:text="An AppleTV for Your Thoughts" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/topicDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"

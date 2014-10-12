@@ -8,4 +8,10 @@
 	<string name="agenda">Agenda</string>
 	<string name="raffle">Raffle</string>
 	<string name="partners">Partners</string>
+	<string-array name="experts_topics">
+        <item>Polarion API &amp; WIKI</item>
+        <item>Polarion Integrations</item>
+        <item>Process &amp; Workflow</item>
+        <item>Features &amp; Usage</item>
+    </string-array>
 </resources>

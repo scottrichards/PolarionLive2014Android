@@ -56,6 +56,11 @@
             android:name=".RaffleContactActivity"
             android:label="Contact Info" >
         </activity>
+        
+        <activity
+            android:name=".ExpertsActivity"
+            android:label="Meet the Experts" >
+        </activity>
     </application>
 
 </manifest>

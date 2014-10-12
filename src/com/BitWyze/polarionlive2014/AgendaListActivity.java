@@ -62,9 +62,16 @@ public class AgendaListActivity extends ListActivity {
 	    super.onListItemClick(l, v, position, id);
 	    // Get the item that was clicked
 	    Agenda sessionInfo = (Agenda)this.getListAdapter().getItem(position);
-	    Intent detailsIntent = new Intent(getBaseContext(),SessionDetailsActivity.class);
+	    
 	    PolarionApplication application = (PolarionApplication) getApplication();
 	    application.setSession(sessionInfo);
-	    startActivity(detailsIntent);
+	    String objectId = sessionInfo.getObjectId().toString();
+	    if (objectId.equals("bDrdterv72")) {	// if it is meet the Experts session go to that Actiity
+	    	Intent detailsIntent = new Intent(getBaseContext(),ExpertsActivity.class);
+		    startActivity(detailsIntent);
+	    } else {
+		    Intent detailsIntent = new Intent(getBaseContext(),SessionDetailsActivity.class);
+		    startActivity(detailsIntent);
+	    }
 	  }
 }
