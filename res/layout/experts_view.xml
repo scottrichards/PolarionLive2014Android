@@ -22,7 +22,7 @@
         android:layout_marginTop="14dp" />
 
     <TextView
-        android:id="@+id/topicDescription"
+        android:id="@+id/nameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -33,11 +33,11 @@
         android:text="" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/titleLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/topicDescription"
+        android:layout_below="@+id/nameLabel"
         android:layout_marginTop="19dp"
         android:layout_marginLeft="20dp"
         android:text="Expert(s):" />
@@ -47,13 +47,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/titleLabel"
         android:layout_marginTop="14dp"
         android:layout_marginLeft="20dp"
         android:text="" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/companyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -67,9 +67,9 @@
         android:id="@+id/emailField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView5"
+        android:layout_alignTop="@+id/companyLabel"
         android:layout_marginLeft="19dp"
-        android:layout_toRightOf="@+id/textView5"
+        android:layout_toRightOf="@+id/companyLabel"
         android:inputType="textEmailAddress"
         android:ems="10" >
 

@@ -13,12 +13,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class RaffleContactActivity extends Activity {
 	private String testimonial;
 	static String TAG = "RaffleContactActivity";
+	private CheckBox marketingUsageCheckbox;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,16 @@ public class RaffleContactActivity extends Activity {
 				addTestimonial();
 			}
 		});
+		findViewById(R.id.raffleRules).setOnClickListener(new OnClickListener(){
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getBaseContext(),RaffleRulesActivity.class);
+				startActivity(intent);
+			}
+		});
+		marketingUsageCheckbox = (CheckBox)findViewById(R.id.marketingUsage);
+		if (marketingUsageCheckbox != null) {
+			Log.d("","It Exists");
+		}
 	}
 	
 	 @Override
@@ -73,6 +85,9 @@ public class RaffleContactActivity extends Activity {
 		testimonialObject.put("tesimonial", testimonial);
 		if (companyView.getText().length() == 0 || emailView.getText().length() == 0 || nameView.getText().length() == 0 || titleView.getText().length() == 0) {
 			Toast.makeText(RaffleContactActivity.this, "Please provide all contact information to enter the raffle",
+					Toast.LENGTH_LONG).show();
+		} if (!marketingUsageCheckbox.isChecked()) {
+			Toast.makeText(RaffleContactActivity.this, "Please consent to marketing usage to enter the raffle.",
 					Toast.LENGTH_LONG).show();
 		} else {
 			testimonialObject.saveInBackground(new SaveCallback() {

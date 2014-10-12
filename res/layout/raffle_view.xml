@@ -4,7 +4,7 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/topicDescription"
+        android:id="@+id/nameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -17,18 +17,18 @@
         android:id="@+id/hotelDirections"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/topicDescription"
+        android:layout_alignLeft="@+id/nameLabel"
         android:layout_alignParentTop="true"
         android:layout_marginTop="32dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Your Thoughts for a Chance to Win" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/titleLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/topicDescription"
-        android:layout_below="@+id/topicDescription"
+        android:layout_alignLeft="@+id/nameLabel"
+        android:layout_below="@+id/nameLabel"
         android:layout_marginTop="20dp"
         android:text="Share what&apos;s Great about Polarion:" />
 
@@ -36,10 +36,10 @@
         android:id="@+id/testimonial_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignLeft="@+id/titleLabel"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/titleLabel"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="23dp"

@@ -76,6 +76,11 @@
             android:name=".TestimonialSamplesActivity"
             android:label="Testimonial Samples" >
         </activity>
+        
+         <activity
+            android:name=".RaffleRulesActivity"
+            android:label="Raffle Rules" >
+        </activity>
     </application>
 
 </manifest>

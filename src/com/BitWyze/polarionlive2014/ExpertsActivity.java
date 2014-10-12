@@ -44,7 +44,7 @@ public class ExpertsActivity extends Activity implements OnItemSelectedListener 
 			}
 		});
 		emailView = (EditText)findViewById(R.id.emailField);
-		topicDescriptionView = (TextView)findViewById(R.id.topicDescription);
+		topicDescriptionView = (TextView)findViewById(R.id.nameLabel);
 		expertsTextView = (TextView)findViewById(R.id.expertsTextView);
 		topicSpinner = (Spinner)findViewById(R.id.topicSpinner);
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
