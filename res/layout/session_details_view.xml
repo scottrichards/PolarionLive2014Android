@@ -60,8 +60,53 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-        android:text="TextView"
-        android:lines="2"
-         />
+
+   <TextView
+        android:id="@+id/speakerRatingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/session_speakers"
+        android:layout_below="@+id/session_speakers"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="Presenter" />
+   
+    <RatingBar
+        android:id="@+id/speakerRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speakerRatingText"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="6dp"
+        android:minHeight="50dp" />
+        
+    <TextView
+        android:id="@+id/contentRatingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_alignParentLeft="true"
+        android:layout_below="@+id/speakerRatingBar"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="Content" />
+           
+    <RatingBar
+        android:id="@+id/contentRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentRatingText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:minHeight="50dp" />
+
+
+
+
+
+
+
+  
 
 </RelativeLayout>

@@ -64,6 +64,8 @@ public class RaffleContactActivity extends Activity {
         return true;
     }
 	 
+	
+	 
 	 // Move to the Raffle Contact Info Screen
 	 public void onEnter() {
 	 }

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     
-<item android:id="@+id/action_enter_contact_info"
+	<item android:id="@+id/action_rate"
           android:icon="@drawable/ic_action_done"
           android:title="Enter"
           android:showAsAction="ifRoom" />
 </menu>
+

@@ -65,8 +65,6 @@ public class AgendaListActivity extends ListActivity {
 	    Intent detailsIntent = new Intent(getBaseContext(),SessionDetailsActivity.class);
 	    PolarionApplication application = (PolarionApplication) getApplication();
 	    application.setSession(sessionInfo);
-	    detailsIntent.putExtra("SESSION_NAME",sessionInfo.getSession());
-	    detailsIntent.putExtra("SESSION_DESCRIPTION",sessionInfo.getDescription());
 	    startActivity(detailsIntent);
 	  }
 }
