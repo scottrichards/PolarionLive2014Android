@@ -31,34 +31,6 @@ public class RaffleContactActivity extends Activity {
 		findViewById(R.id.button1).setOnClickListener(new OnClickListener(){
 			public void onClick(View arg0) {
 				addTestimonial();
-//				Intent mainActivityIntent = new Intent(getBaseContext(),MainActivity.class);
-//				ParseObject testimonialObject = new ParseObject("Testimonial");
-//				TextView nameView = (TextView)findViewById(R.id.name_text);
-//				TextView companyView = (TextView)findViewById(R.id.company_text);
-//				TextView titleView = (TextView)findViewById(R.id.title_text);
-//				TextView emailView = (TextView)findViewById(R.id.email_text);
-//				testimonialObject.put("company", companyView.getText().toString());
-//				testimonialObject.put("email", emailView.getText().toString());
-//				testimonialObject.put("name", nameView.getText().toString());
-//				testimonialObject.put("title", titleView.getText().toString());
-//				testimonialObject.put("tesimonial", testimonial);
-//				if (companyView.getText().length() == 0 || emailView.getText().length() == 0 || nameView.getText().length() == 0 || titleView.getText().length() == 0) {
-//					Toast.makeText(RaffleContactActivity.this, "Please provide all contact information to enter the raffle",
-//							Toast.LENGTH_LONG).show();
-//				} else {
-//					testimonialObject.saveInBackground(new SaveCallback() {
-//						@Override
-//						public void done(ParseException e) {
-//						
-//							if (e == null) {
-//								Log.d(TAG,"SUCCESS");
-//						     } else {
-//						    	 Log.d(TAG,"FAILURE"); 
-//						     }
-//						}
-//					});
-//					startActivity(mainActivityIntent);
-//				}
 			}
 		});
 	}

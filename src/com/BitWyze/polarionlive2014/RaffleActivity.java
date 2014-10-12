@@ -30,6 +30,12 @@ public class RaffleActivity extends Activity {
 				onEnter();
 			}
 		});
+		findViewById(R.id.testimonialSamples).setOnClickListener(new OnClickListener(){
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getBaseContext(),TestimonialSamplesActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 	
 	private void onEnter()

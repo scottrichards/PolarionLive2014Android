@@ -71,6 +71,11 @@
             android:name=".ConferenceMapActivity"
             android:label="Conference Map" >
         </activity>
+        
+        <activity
+            android:name=".TestimonialSamplesActivity"
+            android:label="Testimonial Samples" >
+        </activity>
     </application>
 
 </manifest>
