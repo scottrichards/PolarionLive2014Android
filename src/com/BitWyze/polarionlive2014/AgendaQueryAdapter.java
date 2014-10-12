@@ -19,6 +19,7 @@ import com.parse.ParseQueryAdapter;
 
 
 
+
 public class AgendaQueryAdapter extends ParseQueryAdapter<Agenda> {
 
 	public AgendaQueryAdapter(Context context) {
@@ -42,8 +43,22 @@ public class AgendaQueryAdapter extends ParseQueryAdapter<Agenda> {
 
 		super.getItemView(agendaItem, v, parent);
 
-//		ParseImageView iconImage = (ParseImageView) v.findViewById(R.id.icon);
-	
+		String iconType = agendaItem.getIcon();
+		if (iconType != null && iconType.length() > 0) {
+			ParseImageView iconImage = (ParseImageView) v.findViewById(R.id.icon);
+			if (iconType.equals("trophy")) 
+				iconImage.setImageResource(R.drawable.trophy_50);
+			else if (iconType.equals("expert"))
+				iconImage.setImageResource(R.drawable.collaboration_50);
+			else if (iconType.equals("coffee"))
+				iconImage.setImageResource(R.drawable.coffee_75);
+			else if (iconType.equals("cocktail"))
+				iconImage.setImageResource(R.drawable.beer_50);
+			else if (iconType.equals("key"))
+				iconImage.setImageResource(R.drawable.key_filled_50);
+			else if (iconType.equals("food"))
+				iconImage.setImageResource(R.drawable.fork_75);
+		}
 		TextView sessionNameView = (TextView) v.findViewById(R.id.session_name);
 		sessionNameView.setText(agendaItem.getSession());
 		TextView locationView = (TextView) v

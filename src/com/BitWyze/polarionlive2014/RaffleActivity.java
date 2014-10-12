@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RaffleActivity extends Activity {
 
@@ -24,11 +25,17 @@ public class RaffleActivity extends Activity {
 		setContentView(R.layout.raffle_view);
 		findViewById(R.id.button1).setOnClickListener(new OnClickListener(){
 			public void onClick(View arg0) {
+				
 				Intent raffleContactIntent = new Intent(getBaseContext(),RaffleContactActivity.class);
 				TextView textView = (TextView)findViewById(R.id.testimonial_text);
 				String testimonialText = textView.getText().toString();
-				raffleContactIntent.putExtra("TESTIMONIAL_TEXT",testimonialText);
-				startActivity(raffleContactIntent);
+				if (testimonialText.length() == 0) {
+					Toast.makeText(RaffleActivity.this, "Please provide a testimonial to enter the raffle",
+							Toast.LENGTH_LONG).show();
+				} else {
+					raffleContactIntent.putExtra("TESTIMONIAL_TEXT",testimonialText);
+					startActivity(raffleContactIntent);
+				}
 			}
 		});
 	}

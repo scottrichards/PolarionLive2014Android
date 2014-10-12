@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RaffleContactActivity extends Activity {
 	private String testimonial;
@@ -39,18 +40,23 @@ public class RaffleContactActivity extends Activity {
 				testimonialObject.put("name", nameView.getText().toString());
 				testimonialObject.put("title", titleView.getText().toString());
 				testimonialObject.put("tesimonial", testimonial);
-				testimonialObject.saveInBackground(new SaveCallback() {
-					@Override
-					public void done(ParseException e) {
-					
-						if (e == null) {
-							Log.d(TAG,"SUCCESS");
-					     } else {
-					    	 Log.d(TAG,"FAILURE"); 
-					     }
-					}
-				});
-				startActivity(mainActivityIntent);
+				if (companyView.getText().length() == 0 || emailView.getText().length() == 0 || nameView.getText().length() == 0 || titleView.getText().length() == 0) {
+					Toast.makeText(RaffleContactActivity.this, "Please provide all contact information to enter the raffle",
+							Toast.LENGTH_LONG).show();
+				} else {
+					testimonialObject.saveInBackground(new SaveCallback() {
+						@Override
+						public void done(ParseException e) {
+						
+							if (e == null) {
+								Log.d(TAG,"SUCCESS");
+						     } else {
+						    	 Log.d(TAG,"FAILURE"); 
+						     }
+						}
+					});
+					startActivity(mainActivityIntent);
+				}
 			}
 		});
 		

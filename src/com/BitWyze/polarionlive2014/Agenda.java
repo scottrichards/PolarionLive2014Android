@@ -52,6 +52,10 @@ public class Agenda extends ParseObject {
 		return getString("description");
 	}
 	
+	public String getIcon() {
+		return getString("icon");
+	}
+	
 	public String getSpeakers() {
 		return getString("presenter");
 	}

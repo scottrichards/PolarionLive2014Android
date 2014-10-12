@@ -11,7 +11,7 @@
         android:layout_below="@+id/textView1"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:text="Submit a Testimonial to Enter the Raffle" />
+        android:text="Submit a Testimonial to Enter the Drawing" />
 
     <TextView
         android:id="@+id/textView1"
@@ -20,7 +20,7 @@
         android:layout_alignLeft="@+id/topicDescription"
         android:layout_alignParentTop="true"
         android:layout_marginTop="32dp"
-        android:text="An AppleTV for Your Thoughts" />
+        android:text="Your Thoughts for a Chance to Win" />
 
     <TextView
         android:id="@+id/textView3"
