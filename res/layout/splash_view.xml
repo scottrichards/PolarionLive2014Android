@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="720dp"
+        android:layout_height="480dp"
+        android:layout_x="1dp"
+        android:layout_y="1dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/splash_title" />
+
+</AbsoluteLayout>

@@ -60,6 +60,13 @@ public class Agenda extends ParseObject {
 		return getString("presenter");
 	}
 	
+	public Boolean getDetails() {
+		if (has("details")) {
+			return getBoolean("details");
+		} else 
+			return true;
+	}
+	
 	public String getTime() {
 		if (dateFormat == null) {
 			dateFormat = new SimpleDateFormat("hh:mm",java.util.Locale.getDefault());

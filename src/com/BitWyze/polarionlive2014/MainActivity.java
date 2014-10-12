@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
 
 import com.parse.LogInCallback;
 import com.parse.Parse;
@@ -29,6 +31,42 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         if (!isLoggedIn) {
         	doLogin();
+        }
+        View titleView = findViewById(R.id.titleImage);
+        if (titleView != null) {
+        	titleView.setOnClickListener(new OnClickListener(){
+				public void onClick(View arg0) {
+					Intent agendaActivityIntent = new Intent(getBaseContext(),AgendaListActivity.class);
+					startActivity(agendaActivityIntent);
+				}
+			});
+        }
+        View bodyImageView = findViewById(R.id.bodyImage);
+        if (bodyImageView != null) {
+        	bodyImageView.setOnClickListener(new OnClickListener(){
+				public void onClick(View arg0) {
+					Intent agendaActivityIntent = new Intent(getBaseContext(),AgendaListActivity.class);
+					startActivity(agendaActivityIntent);
+				}
+			});
+        }
+        View hotelDirections = findViewById(R.id.hotelDirections);
+        if (hotelDirections != null) {
+        	hotelDirections.setOnClickListener(new OnClickListener(){
+				public void onClick(View arg0) {
+					Intent activityIntent = new Intent(getBaseContext(),HotelDirectionsActivity.class);
+					startActivity(activityIntent);
+				}
+			});
+        }
+        View conferenceMap = findViewById(R.id.conferenceMap);
+        if (conferenceMap != null) {
+        	conferenceMap.setOnClickListener(new OnClickListener(){
+				public void onClick(View arg0) {
+					Intent activityIntent = new Intent(getBaseContext(),ConferenceMapActivity.class);
+					startActivity(activityIntent);
+				}
+			});
         }
     }
 

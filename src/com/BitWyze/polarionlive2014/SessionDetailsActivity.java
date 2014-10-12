@@ -40,6 +40,8 @@ public class SessionDetailsActivity extends Activity {
 		sessionSpeakersView.setText(sessionItem.getSpeakers());
 		sessionTimeView.setText(sessionItem.getTime());
 		sessionLocationView.setText(sessionItem.getLocation());
+
+		
 		contentRatingBar = (RatingBar)findViewById(R.id.contentRatingBar);
 		speakerRatingBar = (RatingBar)findViewById(R.id.speakerRatingBar);
 		contentRatingBar.setStepSize(1);
@@ -63,7 +65,7 @@ public class SessionDetailsActivity extends Activity {
 
 			case R.id.action_rate: {
 				postRating();
-				Intent mainActivityIntent = new Intent(getBaseContext(),MainActivity.class);
+				Intent mainActivityIntent = new Intent(getBaseContext(),AgendaListActivity.class);
 				startActivity(mainActivityIntent);
 				break;
 			}

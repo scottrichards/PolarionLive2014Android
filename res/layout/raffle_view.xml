@@ -8,13 +8,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/hotelDirections"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:text="Submit a Testimonial to Enter the Drawing" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/hotelDirections"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/topicDescription"

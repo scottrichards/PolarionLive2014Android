@@ -33,7 +33,6 @@
          <activity
             android:name=".PartnerActivity"
             android:label="@string/partners"
-            android:theme="@style/MyActionBar"
              >
         </activity>
         
@@ -44,6 +43,7 @@
         
         <activity
             android:name=".SessionDetailsActivity"
+            android:parentActivityName=".AgendaListActivity"
             android:label="Details"
              >
         </activity>
@@ -60,6 +60,16 @@
         <activity
             android:name=".ExpertsActivity"
             android:label="Meet the Experts" >
+        </activity>
+        
+        <activity
+            android:name=".HotelDirectionsActivity"
+            android:label="Hotel Directions" >
+        </activity>
+        
+        <activity
+            android:name=".ConferenceMapActivity"
+            android:label="Conference Map" >
         </activity>
     </application>
 
