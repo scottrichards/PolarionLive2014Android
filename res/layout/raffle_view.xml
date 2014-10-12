@@ -20,6 +20,7 @@
         android:layout_alignLeft="@+id/topicDescription"
         android:layout_alignParentTop="true"
         android:layout_marginTop="32dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Your Thoughts for a Chance to Win" />
 
     <TextView
