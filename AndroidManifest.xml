@@ -22,7 +22,7 @@
         
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="Polarion Live 2014" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -80,6 +80,11 @@
          <activity
             android:name=".RaffleRulesActivity"
             android:label="Raffle Rules" >
+        </activity>
+        
+        <activity
+            android:name=".SurveyActivity"
+            android:label="Message Survey" >
         </activity>
     </application>
 

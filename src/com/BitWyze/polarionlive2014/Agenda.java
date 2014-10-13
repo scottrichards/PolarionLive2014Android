@@ -2,6 +2,7 @@ package com.BitWyze.polarionlive2014;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 import com.parse.ParseObject;
 import com.parse.ParseClassName;
@@ -69,7 +70,8 @@ public class Agenda extends ParseObject {
 	
 	public String getTime() {
 		if (dateFormat == null) {
-			dateFormat = new SimpleDateFormat("hh:mm",java.util.Locale.getDefault());
+			dateFormat = new SimpleDateFormat("H:mm",java.util.Locale.getDefault());
+			dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
 		}
 		String timeStr = "";
 		Date start = getDate("start");

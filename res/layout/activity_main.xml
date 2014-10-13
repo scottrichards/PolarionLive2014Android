@@ -11,41 +11,55 @@
     >
     
     <ImageView
-        android:id="@+id/titleImage"
-        android:layout_width="360dp"
-        android:layout_height="220dp"
+        android:id="@+id/splash_title"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="false"
         android:adjustViewBounds="true"
         android:cropToPadding="false"
-        android:maxHeight="220dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/splash_title" />
+        android:src="@drawable/splash_title2" />
     
-     <ImageView
-         android:id="@+id/bodyImage"
-         android:layout_width="wrap_content"
-         android:layout_height="120dp"
-         android:layout_below="@+id/titleImage"
-         android:layout_marginTop="80dp"
-         android:layout_centerHorizontal="true"
-         android:src="@drawable/user_conference_2014" />
-
-     <TextView
+    <TextView
          android:id="@+id/hotelDirections"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:layout_centerVertical="true"
-         android:layout_alignLeft="@+id/titleImage"
+       	 android:layout_alignParentLeft="true"
+         android:layout_marginLeft="32dp"
+         android:layout_marginTop="20dp"
+         android:layout_below="@+id/splash_title"
          android:text="Hotel Directions" />
 
      <TextView
          android:id="@+id/conferenceMap"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:layout_centerVertical="true"
-         android:layout_alignRight="@+id/titleImage"
+		 android:layout_alignParentRight="true"
+		 android:layout_below="@+id/splash_title"
+		  android:layout_marginTop="20dp"
+         android:layout_marginRight="32dp"
          android:text="Conference Map" />
+     
+     <TextView
+         android:id="@+id/survey"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@+id/hotelDirections"
+         android:layout_marginTop="20dp"
+         android:text="Does this Resonate?" />
+    
+     <ImageView
+         android:id="@+id/bodyImage"
+         android:layout_width="wrap_content"
+         android:layout_height="120dp"
+         android:layout_below="@+id/survey"
+         android:layout_marginTop="20dp"
+         android:layout_centerHorizontal="true"
+         android:src="@drawable/user_conference_2014" />
+
+     
 
 </RelativeLayout>

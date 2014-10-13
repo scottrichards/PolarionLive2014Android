@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.BitWyze.polarionlive2014.MainActivity" >
 
-    <item android:id="@+id/action_agenda" android:title="@string/agenda"></item>
-    <item android:id="@+id/action_raffle" android:title="@string/raffle"></item>
-    <item android:id="@+id/action_partners" android:title="@string/partners"></item>
+    <item android:id="@+id/action_agenda" android:title="@string/agenda" android:icon="@drawable/clock_50" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/action_raffle" android:title="@string/raffle" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/action_partners" android:title="@string/partners" android:showAsAction="ifRoom"></item>
 
 </menu>

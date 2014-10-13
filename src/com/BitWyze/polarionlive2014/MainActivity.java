@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
         if (!isLoggedIn) {
         	doLogin();
         }
-        View titleView = findViewById(R.id.titleImage);
+        View titleView = findViewById(R.id.splash_title);
         if (titleView != null) {
         	titleView.setOnClickListener(new OnClickListener(){
 				public void onClick(View arg0) {
@@ -64,6 +64,15 @@ public class MainActivity extends ActionBarActivity {
         	conferenceMap.setOnClickListener(new OnClickListener(){
 				public void onClick(View arg0) {
 					Intent activityIntent = new Intent(getBaseContext(),ConferenceMapActivity.class);
+					startActivity(activityIntent);
+				}
+			});
+        }
+        View survey = findViewById(R.id.survey);
+        if (survey != null) {
+        	survey.setOnClickListener(new OnClickListener(){
+				public void onClick(View arg0) {
+					Intent activityIntent = new Intent(getBaseContext(),SurveyActivity.class);
 					startActivity(activityIntent);
 				}
 			});

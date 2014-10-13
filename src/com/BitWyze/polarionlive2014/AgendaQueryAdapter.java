@@ -55,9 +55,12 @@ public class AgendaQueryAdapter extends ParseQueryAdapter<Agenda> {
 			else if (iconType.equals("cocktail"))
 				iconImage.setImageResource(R.drawable.beer_50);
 			else if (iconType.equals("key"))
-				iconImage.setImageResource(R.drawable.key_filled_50);
+				iconImage.setImageResource(R.drawable.key_filled_75);
 			else if (iconType.equals("food"))
 				iconImage.setImageResource(R.drawable.fork_75);
+		} else {
+			ParseImageView iconImage = (ParseImageView) v.findViewById(R.id.icon);
+			iconImage.setImageResource(0);
 		}
 		TextView sessionNameView = (TextView) v.findViewById(R.id.session_name);
 		sessionNameView.setText(agendaItem.getSession());
